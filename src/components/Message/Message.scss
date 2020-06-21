@@ -1,15 +1,19 @@
-.Message {
-    display: block;
-    background-color: white;
-    margin: 10px auto;
-    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px;
-    border-radius: 5px;
-    clear: both;
-  
-    &.me {
-      color: white;
-      float: right;
-      background-color: #328ec4;
-    }
+.container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+  width: 75%;
+  border: 1px solid transparent;
+  border-radius: 34px;
+  box-sizing: border-box;
+  background: #00aaff87;
+  margin-bottom: 10px;
+
+  &.me {
+    color: white;
+    float: right;
+    background-color: #328ec4;
   }
+}

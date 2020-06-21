@@ -12,7 +12,14 @@ class Message extends Component {
   }
 
   render() {
-    return <div className="Message">{this.state.message.Body}</div>;
+    return (
+      <div className="container">
+        <span>{this.state.message.id}</span>
+        <span>{this.state.message.body}</span>
+        <span>{this.state.message.created_at}</span>
+      </div>
+
+    )
   }
 }
 
