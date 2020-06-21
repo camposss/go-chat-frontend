@@ -22,8 +22,11 @@ let connect = cb => {
 };
 
 let sendMsg = msg => {
+  if (!isOpen(socket)) return;
   console.log("sending msg: ", msg);
   socket.send(msg);
 };
+
+const isOpen = (ws) => { return ws.readyState === ws.OPEN }
 
 export { connect, sendMsg };
